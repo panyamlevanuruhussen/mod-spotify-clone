@@ -1,0 +1,250 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    color: white;
+    overflow: hidden;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .main {
+    display: flex;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /*..... sidebar style ......*/
+  
+  .sidebar {
+    background-color: black;
+    width: 250px;
+    border-radius: 1rem; /* 1rem = 16px*/
+  }
+  
+  .spotify-logo {
+    margin: 0.6rem 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #navbar div {
+    margin-top: 0.3rem;
+  }
+  
+  #spotify-icon {
+    height: 2rem;
+  }
+  
+  #spotify-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  a {
+    text-decoration: none;
+    columns: #fff;
+  }
+  
+  .addsong {
+    height: 1.3rem;
+  }
+  
+  #library-icon {
+    height: 1.1rem;
+  }
+  
+  .nav {
+    margin: 1rem 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .addPlaylist {
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .addPlaylist div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.9rem;
+  }
+  
+  .songType {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.1rem;
+    gap: 4px;
+    font-size: 15px;
+  }
+  
+  .install {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 2rem;
+    margin-top: 20px;
+  }
+  
+  .install a {
+    font-size: 0.8rem;
+  }
+  
+  #downArrow {
+    height: 1.5rem;
+  }
+  
+  .navbar {
+    background-color: #1212;
+    height: 1rem;
+  }
+  
+  .addPlaylist {
+    font-size: 15px;
+  }
+  
+  .nav-option:hover {
+    background-color: rgb(34, 37, 37);
+  }
+  
+  /* main-content style */
+  
+  .main-content {
+    background-color: rgb(22, 22, 22);
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 20px;
+  }
+  
+  .main-images {
+    width: 50px;
+  }
+  
+  .user-image {
+    width: 70px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .playlist-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(48, 48, 48);
+    width: 300px;
+  }
+  
+  .playlist-image {
+    width: 50px;
+  }
+  
+  .liked-songs {
+    background-color: rgb(48, 48, 48);
+  }
+  
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .main-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .banner {
+    /* border: 2px solid black; */
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+  }
+  
+  .singer-image {
+    width: 150px;
+  }
+  
+  .song-name {
+    font-size: 10px;
+  }
+  
+  .banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  
+  /* footer-style */
+  
+  .music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #file {
+    width: 500px;
+  }
+  
+  .container-div {
+    display: flex;
+  }
+  
+  .container-div1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container-div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+  
+  /* media-query */
+  @media only screen and (max-width: 475px) {
+    .sidebar {
+      height: 100%;
+      overflow-y: scroll;
+      width: 160px;
+    }
+  
+    .container-div1,
+    .container-div2 {
+      display: none;
+    }
+  
+    .playlist-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
